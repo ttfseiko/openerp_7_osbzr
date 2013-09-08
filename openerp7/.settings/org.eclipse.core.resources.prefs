@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-encoding//openerp/addons/mail/mail_thread.py=utf-8
-encoding//openerp/addons/sale/sale.py=utf-8
-encoding//openerp/addons/sale_stock/sale_stock.py=utf-8
-encoding//openerp/osv/orm.py=utf-8
+encoding//openerp/addons/base_quality_interrogation.py=utf-8
+encoding//openerp/addons/hr/__openerp__.py=utf-8
+encoding//openerp/addons/web_pdf_preview/controllers/__init__.py=utf-8
+encoding//openerp/addons/web_pdf_preview/controllers/main.py=utf-8
