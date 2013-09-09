@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
 encoding//openerp/addons/account/account_invoice.py=utf-8
+encoding//openerp/addons/account/wizard/account_report_account_balance.py=utf-8
+encoding//openerp/addons/account/wizard/account_report_aged_partner_balance.py=utf-8
+encoding//openerp/addons/account/wizard/account_report_common.py=utf-8
 encoding//openerp/addons/account_voucher/account_voucher.py=utf-8
 encoding//openerp/addons/base_quality_interrogation.py=utf-8
 encoding//openerp/addons/document/document.py=utf-8
