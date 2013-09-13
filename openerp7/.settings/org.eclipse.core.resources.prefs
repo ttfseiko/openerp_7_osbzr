@@ -4,6 +4,7 @@ encoding//openerp/addons/account/wizard/account_report_account_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_aged_partner_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_common.py=utf-8
 encoding//openerp/addons/account_voucher/account_voucher.py=utf-8
+encoding//openerp/addons/base_calendar/base_calendar.py=utf-8
 encoding//openerp/addons/base_quality_interrogation.py=utf-8
 encoding//openerp/addons/base_status/base_stage.py=utf-8
 encoding//openerp/addons/crm/crm_lead.py=utf-8
