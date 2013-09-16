@@ -39,6 +39,7 @@ encoding//openerp/addons/mail/mail_alias.py=utf-8
 encoding//openerp/addons/mail/mail_group.py=utf-8
 encoding//openerp/addons/mail/mail_mail.py=utf-8
 encoding//openerp/addons/mrp/mrp.py=utf-8
+encoding//openerp/addons/point_of_sale/point_of_sale.py=utf-8
 encoding//openerp/addons/project/project.py=utf-8
 encoding//openerp/addons/project_issue/project_issue.py=utf-8
 encoding//openerp/addons/report_webkit/__openerp__.py=utf-8
