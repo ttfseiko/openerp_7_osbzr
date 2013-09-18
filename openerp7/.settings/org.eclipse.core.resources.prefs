@@ -21,6 +21,7 @@ encoding//openerp/addons/auth_signup/res_users.py=utf-8
 encoding//openerp/addons/base/ir/ir_model.py=utf-8
 encoding//openerp/addons/base/ir/ir_translation.py=utf-8
 encoding//openerp/addons/base/res/res_currency.py=utf-8
+encoding//openerp/addons/base/res/res_partner.py=utf-8
 encoding//openerp/addons/base/res/res_users.py=utf-8
 encoding//openerp/addons/base_calendar/base_calendar.py=utf-8
 encoding//openerp/addons/base_quality_interrogation.py=utf-8
