@@ -20,6 +20,7 @@ encoding//openerp/addons/auth_oauth_signup/res_users.py=utf-8
 encoding//openerp/addons/auth_signup/res_users.py=utf-8
 encoding//openerp/addons/base/ir/ir_model.py=utf-8
 encoding//openerp/addons/base/ir/ir_translation.py=utf-8
+encoding//openerp/addons/base/res/res_config.py=utf-8
 encoding//openerp/addons/base/res/res_currency.py=utf-8
 encoding//openerp/addons/base/res/res_partner.py=utf-8
 encoding//openerp/addons/base/res/res_users.py=utf-8
