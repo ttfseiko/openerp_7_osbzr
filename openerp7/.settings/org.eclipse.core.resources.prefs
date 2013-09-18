@@ -36,6 +36,7 @@ encoding//openerp/addons/edi/models/res_company.py=utf-8
 encoding//openerp/addons/edi/models/res_currency.py=utf-8
 encoding//openerp/addons/edi/models/res_partner.py=utf-8
 encoding//openerp/addons/hr/__openerp__.py=utf-8
+encoding//openerp/addons/hr_expense/hr_expense.py=utf-8
 encoding//openerp/addons/hr_recruitment/hr_recruitment.py=utf-8
 encoding//openerp/addons/hr_timesheet/hr_timesheet.py=utf-8
 encoding//openerp/addons/hr_timesheet_invoice/hr_timesheet_invoice.py=utf-8
