@@ -49,6 +49,7 @@ encoding//openerp/addons/mail/mail_thread.py=utf-8
 encoding//openerp/addons/mail/res_users.py=utf-8
 encoding//openerp/addons/mail/tests/test_mail_features.py=utf-8
 encoding//openerp/addons/mail/tests/test_mail_gateway.py=utf-8
+encoding//openerp/addons/membership/membership.py=utf-8
 encoding//openerp/addons/mrp/mrp.py=utf-8
 encoding//openerp/addons/mrp/res_config.py=utf-8
 encoding//openerp/addons/mrp/tests/__init__.py=utf-8
