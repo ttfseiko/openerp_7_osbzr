@@ -76,4 +76,5 @@ encoding//openerp/addons/web_pdf_preview/controllers/__init__.py=utf-8
 encoding//openerp/addons/web_pdf_preview/controllers/main.py=utf-8
 encoding//openerp/osv/orm.py=utf-8
 encoding//openerp/osv/osv.py=utf-8
+encoding//openerp/report/report_sxw.py=utf-8
 encoding//openerp/tools/misc.py=utf-8
