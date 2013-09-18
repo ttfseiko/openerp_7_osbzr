@@ -5,6 +5,7 @@ encoding//openerp/addons/account/account_move_line.py=utf-8
 encoding//openerp/addons/account/edi/invoice.py=utf-8
 encoding//openerp/addons/account/project/project.py=utf-8
 encoding//openerp/addons/account/res_config.py=utf-8
+encoding//openerp/addons/account/wizard/account_invoice_refund.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_account_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_aged_partner_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_common.py=utf-8
