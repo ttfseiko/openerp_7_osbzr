@@ -56,6 +56,7 @@ encoding//openerp/addons/mrp/tests/test_multicompany.py=utf-8
 encoding//openerp/addons/point_of_sale/point_of_sale.py=utf-8
 encoding//openerp/addons/project/project.py=utf-8
 encoding//openerp/addons/project_issue/project_issue.py=utf-8
+encoding//openerp/addons/purchase/partner.py=utf-8
 encoding//openerp/addons/report_webkit/__openerp__.py=utf-8
 encoding//openerp/addons/sale_crm/sale_crm.py=utf-8
 encoding//openerp/addons/sale_stock/sale_stock.py=utf-8
