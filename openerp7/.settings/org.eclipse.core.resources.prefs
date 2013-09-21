@@ -22,6 +22,7 @@ encoding//openerp/addons/base/ir/ir_actions.py=utf-8
 encoding//openerp/addons/base/ir/ir_mail_server.py=utf-8
 encoding//openerp/addons/base/ir/ir_model.py=utf-8
 encoding//openerp/addons/base/ir/ir_translation.py=utf-8
+encoding//openerp/addons/base/ir/ir_ui_view.py=utf-8
 encoding//openerp/addons/base/res/res_config.py=utf-8
 encoding//openerp/addons/base/res/res_currency.py=utf-8
 encoding//openerp/addons/base/res/res_partner.py=utf-8
