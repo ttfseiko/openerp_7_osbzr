@@ -79,6 +79,7 @@ encoding//openerp/addons/purchase/partner.py=utf-8
 encoding//openerp/addons/report_webkit/__openerp__.py=utf-8
 encoding//openerp/addons/sale/sale.py=utf-8
 encoding//openerp/addons/sale_crm/sale_crm.py=utf-8
+encoding//openerp/addons/sale_mrp/sale_mrp.py=utf-8
 encoding//openerp/addons/sale_stock/sale_stock.py=utf-8
 encoding//openerp/addons/stock/product.py=utf-8
 encoding//openerp/addons/stock/report/picking.py=utf-8
