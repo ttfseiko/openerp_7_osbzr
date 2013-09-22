@@ -171,7 +171,6 @@ class stock_return_picking(osv.osv_memory):
         elif pick.type =='in':
             new_type = 'out'
             seq_obj_name = 'stock.picking.out'
-        seq_obj_name = 'stock.picking.' + new_type
         new_pick_name = self.pool.get('ir.sequence').get(cr, uid, seq_obj_name)
         new_picking = pick_obj.copy(cr, uid, pick.id, {
                                         'name': _('%s-%s-return') % (new_pick_name, pick.name),
