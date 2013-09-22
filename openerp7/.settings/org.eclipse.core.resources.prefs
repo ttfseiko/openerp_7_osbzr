@@ -10,6 +10,7 @@ encoding//openerp/addons/account/wizard/account_invoice_refund.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_account_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_aged_partner_balance.py=utf-8
 encoding//openerp/addons/account/wizard/account_report_common.py=utf-8
+encoding//openerp/addons/account/wizard/account_report_partner_ledger.py=utf-8
 encoding//openerp/addons/account_analytic_analysis/account_analytic_analysis.py=utf-8
 encoding//openerp/addons/account_report_company/account_report_company.py=utf-8
 encoding//openerp/addons/account_voucher/account_voucher.py=utf-8
