@@ -85,6 +85,7 @@ encoding//openerp/addons/stock/stock.py=utf-8
 encoding//openerp/addons/stock/tests/__init__.py=utf-8
 encoding//openerp/addons/stock/tests/test_multicompany.py=utf-8
 encoding//openerp/addons/stock/wizard/stock_change_product_qty.py=utf-8
+encoding//openerp/addons/stock/wizard/stock_change_standard_price.py=utf-8
 encoding//openerp/addons/stock/wizard/stock_fill_inventory.py=utf-8
 encoding//openerp/addons/stock/wizard/stock_return_picking.py=utf-8
 encoding//openerp/addons/web_pdf_preview/controllers/__init__.py=utf-8
