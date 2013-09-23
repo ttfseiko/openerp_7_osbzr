@@ -1,16 +1,16 @@
-»ùÓÚ OpenERP20130721
+ï»¿åŸºäº OpenERP20130721
 
-³ÖĞø¸ú½øÈı¸ö¹Ù·½¿â
+æŒç»­è·Ÿè¿›ä¸‰ä¸ªå®˜æ–¹åº“
 
-  http://bazaar.launchpad.net/~openerp/openobject-addons/7.0/revision
+  http://bazaar.launchpad.net/~openerp/openobject-addons/7.0/changes
   
-  http://bazaar.launchpad.net/~openerp/openobject-server/7.0/revision
+  http://bazaar.launchpad.net/~openerp/openobject-server/7.0/changes
   
-  http://bazaar.launchpad.net/~openerp/openerp-web/7.0/revision
+  http://bazaar.launchpad.net/~openerp/openerp-web/7.0/changes
   
-Ôö¼ÓÓĞÓÃµÄÉçÇøÄ£¿é
+å¢åŠ æœ‰ç”¨çš„ç¤¾åŒºæ¨¡å—
 
-ºÏ²¢¹Ù·½Î´½ÓÊÜµÄºÏ²¢ÇëÇó
+åˆå¹¶å®˜æ–¹æœªæ¥å—çš„åˆå¹¶è¯·æ±‚
 
-¹ÜÀíÖĞÎÄÉçÇø·¢ÏÖµÄbugºÍÌá½»µÄpatch
+ç®¡ç†ä¸­æ–‡ç¤¾åŒºå‘ç°çš„bugå’Œæäº¤çš„patch
 
