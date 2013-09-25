@@ -80,6 +80,9 @@ class db_backup(osv.osv):
     def schedule_backup(self, cr, user, context={}):
         conf_ids= self.search(cr, user, [])
         confs = self.browse(cr,user,conf_ids)
+        master_pass = tools.config.get('admin_passwd', False)
+        if not master_pass:
+            raise
         for rec in confs:
             db_list = self.get_db_list(cr, user, [], rec.host, rec.port)
             if rec.name in db_list:
@@ -95,7 +98,7 @@ class db_backup(osv.osv):
                 conn = xmlrpclib.ServerProxy(uri + '/xmlrpc/db')
                 bkp=''
                 try:
-                    bkp = execute(conn, 'dump', 'admin', rec.name)
+                    bkp = execute(conn, 'dump', master_pass, rec.name)
                 except:
                     logger.notifyChannel('backup', netsvc.LOG_INFO, "Could'nt backup database %s. Bad database administrator password for server running at http://%s:%s" %(rec.name, rec.host, rec.port))
                     continue
@@ -104,6 +107,8 @@ class db_backup(osv.osv):
                 fp.close()
             else:
                 logger.notifyChannel('backup', netsvc.LOG_INFO, "database %s doesn't exist on http://%s:%s" %(rec.name, rec.host, rec.port))
+
+        return True
 
 db_backup()
 
