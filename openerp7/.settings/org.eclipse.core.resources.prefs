@@ -96,6 +96,7 @@ encoding//openerp/addons/stock/wizard/stock_fill_inventory.py=utf-8
 encoding//openerp/addons/stock/wizard/stock_return_picking.py=utf-8
 encoding//openerp/addons/survey/report/survey_browse_response.py=utf-8
 encoding//openerp/addons/survey/wizard/survey_answer.py=utf-8
+encoding//openerp/addons/web/controllers/main.py=utf-8
 encoding//openerp/addons/web_pdf_preview/controllers/__init__.py=utf-8
 encoding//openerp/addons/web_pdf_preview/controllers/main.py=utf-8
 encoding//openerp/modules/loading.py=utf-8
