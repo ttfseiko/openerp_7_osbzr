@@ -4533,9 +4533,13 @@ class BaseModel(object):
                 if ((not f[trigger_fields_]) or set(fields).intersection(f[trigger_fields_]))]
 
         mapping = {}
+        fresults = {}
         for function in to_compute:
-            # use admin user for accessing objects having rules defined on store fields
-            target_ids = [id for id in function[id_mapping_fnct_](self, cr, SUPERUSER_ID, ids, context) if id]
+            fid = id(function[id_mapping_fnct_])
+            if not fid in fresults:
+                # use admin user for accessing objects having rules defined on store fields
+                fresults[fid] = [id for id in function[id_mapping_fnct_](self, cr, SUPERUSER_ID, ids, context) if id]
+            target_ids = fresults[fid]
 
             # the compound key must consider the priority and model name
             key = (function[priority_], function[model_name_])
