@@ -955,7 +955,7 @@ class mrp_production(osv.osv):
             partner_id = routing_loc.partner_id and routing_loc.partner_id.id or False
 
         # Take next Sequence number of shipment base on type
-        pick_name = ir_sequence.get(cr, uid, 'stock.picking.' + pick_type)
+        pick_name = ir_sequence.get(cr, uid, 'stock.picking' + (pick_type != 'internal' and '.' + pick_type or '' ))
 
         picking_id = stock_picking.create(cr, uid, {
             'name': pick_name,
