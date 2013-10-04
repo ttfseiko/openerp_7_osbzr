@@ -4538,7 +4538,7 @@ class BaseModel(object):
             fid = id(function[id_mapping_fnct_])
             if not fid in fresults:
                 # use admin user for accessing objects having rules defined on store fields
-                fresults[fid] = [id for id in function[id_mapping_fnct_](self, cr, SUPERUSER_ID, ids, context) if id]
+                fresults[fid] = [id2 for id2 in function[id_mapping_fnct_](self, cr, SUPERUSER_ID, ids, context) if id2]
             target_ids = fresults[fid]
 
             # the compound key must consider the priority and model name
@@ -4560,8 +4560,8 @@ class BaseModel(object):
             functions_ids_maps = {}
             # function_ids_maps =
             #   { (function_1_tuple, function_2_tuple) : [target_id1, target_id2, ..] }
-            for id, functions in id_map.iteritems():
-                functions_ids_maps.setdefault(tuple(functions), []).append(id)
+            for fid, functions in id_map.iteritems():
+                functions_ids_maps.setdefault(tuple(functions), []).append(fid)
             for functions, ids in functions_ids_maps.iteritems():
                 call_map.setdefault((priority,model),[]).append((priority, model, ids,
                                                                  [f[func_field_to_compute_] for f in functions]))
