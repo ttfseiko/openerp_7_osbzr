@@ -7,7 +7,13 @@
             <field name="model">account.move</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
-                <form string="Journal Entries">
+                <form string="Journal Entries" version="7.0">
+                  <header>
+                     <button name="button_cancel" class="oe_highlight" states="posted" string="Cancel" type="object"/>
+                     <button name="button_validate" class="oe_highlight" states="draft" string="Post" type="object"/>
+                     <field name="state" widget="statusbar"/>                   
+                  </header>
+                  <sheet>
                     <group colspan="4" col="4">
                         <field name="name" readonly="True"/>
                         <field name="write_uid" states="posted"/>
@@ -61,7 +67,7 @@
                                 </notebook>
                            </form>
                           <!-- Tree for fast edit --> 
-                         <tree editable="top" >
+                         <tree>
                                 <field name="name" string="摘要"/>
                                 <field name="account_id" domain="[('journal_id','=',parent.journal_id)]"/>
                                 <field name="debit" sum="Total Debit"/>
@@ -71,13 +77,9 @@
                                 
                         </tree>
                          </field>
-                            <group col="4" colspan="4">
-                                <field name="state" select="1"/>
-                                <button name="button_cancel" states="posted" string="Cancel" type="object" icon="gtk-cancel"/>
-                                <button name="button_validate" states="draft" string="Post" type="object" icon="terp-camera_test"/>
-                            </group>
                         </page>
                     </notebook>
+                  </sheet>
                 </form>
             </field>
         </record>
@@ -86,7 +88,7 @@
             <field name="name">China Journal Entries</field>
             <field name="res_model">account.move</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form,graph</field>
+            <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="account.view_account_move_filter"/>
         </record>
         <record id="action_china_move_journal_line_view1" model="ir.actions.act_window.view">
@@ -100,7 +102,7 @@
             <field name="act_window_id" ref="action_china_move_journal_line"/>
         </record>
     <!-- Add menu item under account/report menu -->
-    <menuitem name="China Account" id="menu_china_account" parent="account.menu_finance" sequence="99"/>
+    <menuitem name="China Account" id="menu_china_account" parent="account.menu_finance" sequence="1"/>
     <menuitem name="China Entries" id="menu_china_account_move" parent="menu_china_account" sequence="1" action="action_china_move_journal_line"/>
     <menuitem name="China Reports" id="menu_oecn_account_print" parent="menu_china_account" sequence="99"/>
     <menuitem icon="STOCK_PRINT" action="action_oecn_general_report" id="menu_general_ledger" parent="menu_oecn_account_print"  sequence="10"/>

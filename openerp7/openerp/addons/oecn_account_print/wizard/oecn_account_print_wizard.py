@@ -64,10 +64,8 @@ class detail_ledger(osv.osv_memory):
         """
         datas = self.read(cr, uid, ids[0], ['account_id','period_from','period_to','product','partner','company_id'], context=context)
         datas['ids'] = [datas['account_id'][0]]
-        print datas
         account = self.pool.get('account.account').browse(cr, uid, datas['account_id'][0], context=context)
-        #if(account.code[0:4] == '1001' or account.code[0:4] == '1002'):
-        if(account.code[0:3] == '210' or account.code < '114' and account.code > '0'):
+        if(account.code[0:4] == '1001' or account.code[0:4] == '1002'):
             datas['account_code'] = account.code[0:4]
             if(account.currency_id):
                 report_name = 'account.currency_cash_journal'

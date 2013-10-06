@@ -406,7 +406,7 @@ msgstr "金额"
 #. module: oecn_account_print
 #: view:account.move:0
 msgid "Post"
-msgstr "过账"
+msgstr "记账"
 
 #. module: oecn_account_print
 #: view:account.move:0
