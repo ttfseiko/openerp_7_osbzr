@@ -116,12 +116,13 @@ class account_periodly(osv.osv):
                   query='', query_params=()):
         all_periodly_lines = self.search(cr, uid, [], context=context)
         all_companies = self.pool.get('res.company').search(cr, uid, [], context=context)
-        current_sum = dict((company, 0.0) for company in all_companies)
+        all_accounts = self.pool.get('account.account').search(cr, uid, [], context=context)
+        current_sum = dict((company, dict((account, 0.0) for account in all_accounts)) for company in all_companies)
         res = dict((id, dict((fn, 0.0) for fn in field_names)) for id in all_periodly_lines)
         for record in self.browse(cr, uid, all_periodly_lines, context=context):
-            res[record.id]['starting_balance'] = current_sum[record.company_id.id] 
-            current_sum[record.company_id.id] += record.balance
-            res[record.id]['ending_balance'] = current_sum[record.company_id.id]
+            res[record.id]['starting_balance'] = current_sum[record.company_id.id][record.account_id.id] 
+            current_sum[record.company_id.id][record.account_id.id] += record.balance
+            res[record.id]['ending_balance'] = current_sum[record.company_id.id][record.account_id.id]
         return res    
 
     _columns = {
@@ -137,7 +138,7 @@ class account_periodly(osv.osv):
         'company_id': fields.many2one('res.company', 'Company', readonly=True),
     }
 
-    _order = 'date asc'
+    _order = 'date asc,account_id,company_id'
 
 
     def init(self, cr):
