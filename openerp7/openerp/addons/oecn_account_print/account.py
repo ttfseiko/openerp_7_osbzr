@@ -145,7 +145,7 @@ class account_periodly(osv.osv):
         cr.execute("""
             create or replace view account_periodly as (
             select
-                l.id as id,
+                min(l.id) as id,
                 p.fiscalyear_id as fiscalyear_id,
                 p.id as period_id,
                 l.account_id as account_id,
@@ -160,6 +160,6 @@ class account_periodly(osv.osv):
                 left join account_move am on (am.id=l.move_id)
                 left join account_period p on (am.period_id=p.id)
             where l.state != 'draft'
-            group by l.id, p.id, l.account_id, p.fiscalyear_id, p.date_start, am.company_id
+            group by p.id, l.account_id, p.fiscalyear_id, p.date_start, am.company_id
             )
         """)
