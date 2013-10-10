@@ -27,7 +27,7 @@
 标准成本: 采购价格差异/生产成本差异记账。
 =====================================================================================================================
 
-修改自盎格鲁萨克森模块。已经实现标准成本下采购价格差异记账；生产成本差异记账贷实现 <https://github.com/oliverzgy/standard_costing>""",
+修改自盎格鲁萨克森模块。已经实现标准成本下采购价格差异记账；生产成本差异记账待实现 <https://github.com/oliverzgy/standard_costing>""",
     'images': ['images/account_standard_costing.jpeg'],
     'depends': ['product', 'purchase'],
     'category': 'Accounting & Finance',
