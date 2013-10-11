@@ -10,14 +10,16 @@
                 <field name="arch" type="xml">
                     <form string="Configure Backup">
                         <group col="4" colspan="4">
-                            <separator col="2" string="IP Configuration"/>
-                            <separator col="2" string="Database Configuration"/>
-                        </group>
-                        <group>
-                            <field name="host" colspan="2"/>
-                            <field name="name" />
-                            <field name="port" />
-                            <field name="bkp_dir" />
+                            <group col="2" colspan="2">
+                                <separator col="2" string="IP Configuration"/>
+                                <field name="host" colspan="2"/>
+                                <field name="port" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <separator col="2" string="Database Configuration"/>
+                                <field name="name" />
+                                <field name="bkp_dir" />
+                            </group>
                         </group>
                         <newline/>
                         <separator string="Help" colspan="2" />
@@ -36,7 +38,7 @@
                     </form>
                 </field>
         </record>
-    
+
         <record model="ir.ui.view" id="view_db_backup_tree">
                 <field name="name">Configure Backup</field>
                 <field name="model">db.backup</field>
