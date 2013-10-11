@@ -1,13 +1,13 @@
 # Translation of OpenERP Server.
 # This file contains the translation of the following modules:
-#	* auto_backup
+#    * auto_backup
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0 中文社区osbzr版\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-11 08:03+0000\n"
-"PO-Revision-Date: 2013-10-11 08:03+0000\n"
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-24 13:49:51+0000\n"
+"PO-Revision-Date: 2009-11-24 13:49:51+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,82 +19,82 @@ msgstr ""
 #: field:db.backup,bkp_dir:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_bkp_dir
 msgid "Backup Directory"
-msgstr "Backup Directory"
+msgstr "备份路径"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "3) Set 'Object' to 'db.backup' and 'Function' to 'schedule_backup' under page 'Technical Data'"
-msgstr "3) Set 'Object' to 'db.backup' and 'Function' to 'schedule_backup' under page 'Technical Data'"
+msgstr "3) '技术参数(Technical Data)' 页签 对象处选择 'db.backup', 运行方法(Function) 处理输入 schedule_backup"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "Help"
-msgstr "Help"
+msgstr "帮助"
 
 #. module: auto_backup
 #: field:db.backup,name:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_name
 msgid "Database"
-msgstr "Database"
+msgstr "账套"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "2) Schedule new action(create a new record)"
-msgstr "2) Schedule new action(create a new record)"
+msgstr "2) 创建一个备份计划(新建一条备份记录)"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "Database Configuration"
-msgstr "Database Configuration"
+msgstr "账套配置"
 
 #. module: auto_backup
 #: field:db.backup,host:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_host
 msgid "Host"
-msgstr "Host"
+msgstr "主机(数据库)"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "4) Set other values as per your preference"
-msgstr "4) Set other values as per your preference"
+msgstr "4) 其他的备份处理."
 
 #. module: auto_backup
 #: field:db.backup,port:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_port
 msgid "Port"
-msgstr "Port"
+msgstr "端口(数据库)"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "1) Go to Administration / Configuration / Scheduler / Scheduled Actions"
-msgstr "1) Go to Administration / Configuration / Scheduler / Scheduled Actions"
+msgstr "1) 菜单 设置 / 配置 / 计划 / 备份计划"
 
 #. module: auto_backup
 #: help:db.backup,name:0
 msgid "Database you want to schedule backups for"
-msgstr "Database you want to schedule backups for"
+msgstr "需要备份的账套数据库名称"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "This configures the scheduler for automatic backup of the given database running on given host at given port on regular intervals."
-msgstr "This configures the scheduler for automatic backup of the given database running on given host at given port on regular intervals."
+msgstr "为您的账套做好自动备份计划,您需要配置好相关的备份参数."
 
 #. module: auto_backup
 #: view:db.backup:0
 #: model:ir.actions.act_window,name:auto_backup.action_db_backup_tree
 #: model:ir.ui.menu,name:auto_backup.menu_db_backup_tree
 msgid "Configure Backup"
-msgstr "Configure Backup"
+msgstr "备份计划"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "IP Configuration"
-msgstr "IP Configuration"
+msgstr "服务器配置"
 
 #. module: auto_backup
 #: help:db.backup,bkp_dir:0
 msgid "Absolute path for storing the backups"
-msgstr "Absolute path for storing the backups"
+msgstr "备份文件的绝对存储文件夹"
 
 #. module: auto_backup
 #: model:ir.model,name:auto_backup.model_db_backup
@@ -104,9 +104,10 @@ msgstr "db.backup"
 #. module: auto_backup
 #: constraint:db.backup:0
 msgid "Error ! No such database exist."
-msgstr "Error ! No such database exist."
+msgstr "糟糕! 账套消失老"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "Automatic backup of all the databases under this can be scheduled as follows: "
-msgstr "Automatic backup of all the databases under this can be scheduled as follows: "
+msgstr "需要按下面的操作步骤创建并生效备份计划: "
+
