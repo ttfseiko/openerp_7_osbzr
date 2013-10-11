@@ -24,7 +24,7 @@ msgstr "备份路径"
 #. module: auto_backup
 #: view:db.backup:0
 msgid "3) Set 'Object' to 'db.backup' and 'Function' to 'schedule_backup' under page 'Technical Data'"
-msgstr "3) '技术参数(Technical Data)' 页签 对象处选择 'db.backup', 运行方法(Function) 处理输入 schedule_backup"
+msgstr "3) 【技术参数】页签，【对象】输入 db.backup, 【方法】输入schedule_backup"
 
 #. module: auto_backup
 #: view:db.backup:0
@@ -40,7 +40,7 @@ msgstr "账套"
 #. module: auto_backup
 #: view:db.backup:0
 msgid "2) Schedule new action(create a new record)"
-msgstr "2) 创建一个备份计划(新建一条备份记录)"
+msgstr "2) 创建一个计划动作(新建一条记录)"
 
 #. module: auto_backup
 #: view:db.backup:0
@@ -51,23 +51,23 @@ msgstr "账套配置"
 #: field:db.backup,host:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_host
 msgid "Host"
-msgstr "主机(数据库)"
+msgstr "OpenERP主机"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "4) Set other values as per your preference"
-msgstr "4) 其他的备份处理."
+msgstr "4) 按需填写其他值。"
 
 #. module: auto_backup
 #: field:db.backup,port:0
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup_port
 msgid "Port"
-msgstr "端口(数据库)"
+msgstr "OpenERP端口"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "1) Go to Administration / Configuration / Scheduler / Scheduled Actions"
-msgstr "1) 菜单 设置 / 配置 / 计划 / 备份计划"
+msgstr "1) 菜单：设置 / 配置 / 计划 / 计划动作"
 
 #. module: auto_backup
 #: help:db.backup,name:0
@@ -84,7 +84,7 @@ msgstr "为您的账套做好自动备份计划,您需要配置好相关的备�
 #: model:ir.actions.act_window,name:auto_backup.action_db_backup_tree
 #: model:ir.ui.menu,name:auto_backup.menu_db_backup_tree
 msgid "Configure Backup"
-msgstr "备份计划"
+msgstr "配置备份"
 
 #. module: auto_backup
 #: view:db.backup:0
@@ -94,7 +94,7 @@ msgstr "服务器配置"
 #. module: auto_backup
 #: help:db.backup,bkp_dir:0
 msgid "Absolute path for storing the backups"
-msgstr "备份文件的绝对存储文件夹"
+msgstr "存放备份文件的绝对路径"
 
 #. module: auto_backup
 #: model:ir.model,name:auto_backup.model_db_backup
@@ -104,10 +104,10 @@ msgstr "db.backup"
 #. module: auto_backup
 #: constraint:db.backup:0
 msgid "Error ! No such database exist."
-msgstr "糟糕! 账套消失老"
+msgstr "错误，没有这个 账套"
 
 #. module: auto_backup
 #: view:db.backup:0
 msgid "Automatic backup of all the databases under this can be scheduled as follows: "
-msgstr "需要按下面的操作步骤创建并生效备份计划: "
+msgstr "需要按下面的操作步骤创建自动备份计划: "
 
