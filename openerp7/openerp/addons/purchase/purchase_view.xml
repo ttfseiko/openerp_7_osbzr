@@ -424,7 +424,7 @@
                     <field name="price_unit"/>
                     <field name="product_qty"/>
                     <field name="product_uom" groups="product.group_uom"/>
-                    <field name="price_subtotal"/>
+                    <field name="price_subtotal" sum="Subtotal"/>
                     <field name="date_planned"  widget="date" width="135"/>
                     <field name="state" invisible="1"/>
                     <field name="invoiced" invisible="1"/>
