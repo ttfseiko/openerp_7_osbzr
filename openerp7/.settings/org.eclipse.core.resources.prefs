@@ -127,6 +127,7 @@ encoding//openerp/addons/web_printscreen/__openerp__.py=utf-8
 encoding//openerp/addons/web_printscreen/controllers.py=utf-8
 encoding//openerp/addons/web_printscreen/trml2pdf.py=utf-8
 encoding//openerp/modules/loading.py=utf-8
+encoding//openerp/modules/registry.py=utf-8
 encoding//openerp/netsvc.py=utf-8
 encoding//openerp/osv/fields.py=utf-8
 encoding//openerp/osv/orm.py=utf-8
