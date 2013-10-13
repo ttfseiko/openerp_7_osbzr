@@ -171,7 +171,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
         </record>
 
         <record id="small_business_chart1421" model="account.account.template">
-            <field name="code">1412</field>
+            <field name="code">1421</field>
             <field eval="False" name="reconcile"/>
             <field ref="cn_small_business_root" name="parent_id"/>
             <field name="type">other</field>
@@ -342,7 +342,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
             <field name="code">2221</field>
             <field eval="False" name="reconcile"/>
             <field ref="cn_small_business_root" name="parent_id"/>            
-            <field name="type">view</field>
+            <field name="type">other</field>
             <field name="name">应交税费</field>
             <field name="user_type" ref="user_type_bs75"/>
         </record>
@@ -515,7 +515,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
             <field name="user_type" ref="user_type_pl19"/>
         </record>
         <record id="small_business_chart5301" model="account.account.template">
-            <field name="code">6301</field>
+            <field name="code">5301</field>
             <field eval="False" name="reconcile"/>
             <field ref="cn_small_business_root" name="parent_id"/>
             <field name="type">other</field>
