@@ -27,6 +27,7 @@ encoding//openerp/addons/auth_signup/res_users.py=utf-8
 encoding//openerp/addons/auto_backup/__openerp__.py=utf-8
 encoding//openerp/addons/auto_backup/backup_scheduler.py=utf-8
 encoding//openerp/addons/base/ir/ir_actions.py=utf-8
+encoding//openerp/addons/base/ir/ir_attachment.py=utf-8
 encoding//openerp/addons/base/ir/ir_fields.py=utf-8
 encoding//openerp/addons/base/ir/ir_mail_server.py=utf-8
 encoding//openerp/addons/base/ir/ir_model.py=utf-8
