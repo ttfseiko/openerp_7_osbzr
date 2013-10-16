@@ -1,9 +1,11 @@
 eclipse.preferences.version=1
+encoding//openerp/addons/account/__openerp__.py=utf-8
 encoding//openerp/addons/account/account.py=utf-8
 encoding//openerp/addons/account/account_invoice.py=utf-8
 encoding//openerp/addons/account/account_move_line.py=utf-8
 encoding//openerp/addons/account/edi/invoice.py=utf-8
 encoding//openerp/addons/account/ir_sequence.py=utf-8
+encoding//openerp/addons/account/partner.py=utf-8
 encoding//openerp/addons/account/project/project.py=utf-8
 encoding//openerp/addons/account/report/account_analytic_entries_report.py=utf-8
 encoding//openerp/addons/account/report/account_entries_report.py=utf-8
