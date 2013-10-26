@@ -510,7 +510,7 @@ msgstr "sale.config.settings"
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "Before Delivery"
-msgstr "发运前"
+msgstr "先款后货"
 
 #. module: sale
 #: code:addons/sale/sale.py:781
@@ -858,7 +858,7 @@ msgstr "销售订单"
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "On Demand"
-msgstr "需求"
+msgstr "手动开票"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_shop_form
@@ -1919,7 +1919,7 @@ msgstr "EDI 价格表 (%s)"
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "On Delivery Order"
-msgstr "根据发运单"
+msgstr "按发货单开票"
 
 #. module: sale
 #: view:sale.report:0

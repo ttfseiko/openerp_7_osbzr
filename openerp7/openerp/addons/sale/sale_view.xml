@@ -250,6 +250,7 @@
                                 </div>
                                 <field name="amount_total" nolabel="1" class="oe_subtotal_footer_separator" widget='monetary' options="{'currency_field': 'currency_id'}"/>
                             </group>
+                            <field name="invoice_ids"/>
                             <div class="oe_clear"/>
                             <field name="note" class="oe_inline" placeholder="Terms and conditions..."/>
                         </page>

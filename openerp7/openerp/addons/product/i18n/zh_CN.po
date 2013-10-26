@@ -1948,7 +1948,7 @@ msgstr "部件"
 #: field:product.product,code:0
 #: field:product.product,default_code:0
 msgid "Internal Reference"
-msgstr "内部单号"
+msgstr "编号"
 
 #. module: product
 #: view:product.product:0
