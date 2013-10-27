@@ -289,7 +289,7 @@ msgid "Allow adding shipping costs"
 msgstr "允许追加运输成本"
 
 #. module: sale_stock
-#: view:sale.order:0
+#: view:sale.order.line:0
 msgid "days"
 msgstr "天数"
 
