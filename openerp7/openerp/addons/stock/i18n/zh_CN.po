@@ -4396,7 +4396,7 @@ msgid "Chained Company"
 msgstr "连锁公司"
 
 #. module: stock
-#: view:stock.picking.out:0
+#: view:stock.picking:0
 msgid "Check Availability"
 msgstr "检查可用"
 
