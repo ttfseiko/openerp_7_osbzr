@@ -148,6 +148,7 @@ encoding//openerp/report/render/rml2pdf/trml2pdf.py=utf-8
 encoding//openerp/report/render/rml2pdf/utils.py=utf-8
 encoding//openerp/report/report_sxw.py=utf-8
 encoding//openerp/service/web_services.py=utf-8
+encoding//openerp/sql_db.py=utf-8
 encoding//openerp/tools/amount_to_text.py=utf-8
 encoding//openerp/tools/amount_to_text_en.py=utf-8
 encoding//openerp/tools/config.py=utf-8

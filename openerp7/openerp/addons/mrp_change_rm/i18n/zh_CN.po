@@ -1,0 +1,161 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* mrp_change_rm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0 中文社区osbzr版\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-29 11:06+0000\n"
+"PO-Revision-Date: 2013-10-29 11:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:132
+#, python-format
+msgid "Information"
+msgstr "信息"
+
+#. module: mrp_change_rm
+#: view:mrp.production:0
+#: view:stock.move.add:0
+msgid "Add Products"
+msgstr "增加原料"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:102
+#, python-format
+msgid "You are moving %.2f %s but only %.2f %s available for this serial number."
+msgstr "您正在移动 %.2f%s 但只有 %.2f%s 提供供此序列号。"
+
+#. module: mrp_change_rm
+#: model:ir.model,name:mrp_change_rm.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "生产单"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:303
+#, python-format
+msgid "Exception!"
+msgstr "例外!"
+
+#. module: mrp_change_rm
+#: model:ir.model,name:mrp_change_rm.model_stock_move_add
+msgid "Add new Move for Production Order"
+msgstr "为产品订单添加新的调拨单"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,product_uos:0
+msgid "Product UOS"
+msgstr "产品数量"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,product_uos_qty:0
+msgid "Quantity (UOS)"
+msgstr "数量 (UOS)"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,product_uom:0
+msgid "Unit of Measure"
+msgstr "计量单位"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,date_expected:0
+msgid "Scheduled Date"
+msgstr "预计日期"
+
+#. module: mrp_change_rm
+#: view:mrp.production:0
+msgid "Cancel Move"
+msgstr "撤销调拨"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:171
+#, python-format
+msgid "By changing the quantity here, you accept the new quantity as complete: OpenERP will not automatically generate a Back Order."
+msgstr "通过改这里的变量，你将按照这个数量生产：OpenERP不会自动生成一个订单"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,prodlot_id:0
+msgid "Serial Number"
+msgstr "流水号"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:303
+#, python-format
+msgid "Can not create the Move related to MO"
+msgstr "无法创建移动MO"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,product_id:0
+msgid "Product"
+msgstr "产品"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,product_qty:0
+msgid "Quantity"
+msgstr "数量"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:170
+#, python-format
+msgid "Warning: No Back Order"
+msgstr "警告：没有返回订单"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:101
+#, python-format
+msgid "Insufficient Stock for Serial Number !"
+msgstr "这个编号的产品库存不足!"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,location_id:0
+msgid "Source Location"
+msgstr "来源位置"
+
+#. module: mrp_change_rm
+#: field:stock.move.add,location_dest_id:0
+msgid "Destination Location"
+msgstr "目标位置"
+
+#. module: mrp_change_rm
+#: model:ir.model,name:mrp_change_rm.model_stock_move
+msgid "Stock Move"
+msgstr "库存调拨"
+
+#. module: mrp_change_rm
+#: model:ir.actions.act_window,name:mrp_change_rm.action_mo_add_product
+msgid "Add  Products"
+msgstr "添加产品"
+
+#. module: mrp_change_rm
+#: code:addons/mrp_change_rm/stock.py:133
+#, python-format
+msgid "By changing this quantity here, you accept the new quantity as complete: OpenERP will not automatically generate a back order."
+msgstr "通过改这里的变量，你将按照这个数量生产：OpenERP不会自动生成一个订单"
+
+#. module: mrp_change_rm
+#: view:stock.move.add:0
+msgid "Cancel"
+msgstr "撤销"
+
+#. module: mrp_change_rm
+#: view:stock.move.add:0
+msgid "or"
+msgstr "or"
+
+#. module: mrp_change_rm
+#: view:stock.move.add:0
+msgid "Unit Of Measure"
+msgstr "计量单位"
+
+#. module: mrp_change_rm
+#: view:stock.move.add:0
+msgid "Stock Moves"
+msgstr "库存调拨"
+
