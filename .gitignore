@@ -3,4 +3,4 @@
 .idea/*
 .project
 .pydevproject
-.settings
+.settings/
