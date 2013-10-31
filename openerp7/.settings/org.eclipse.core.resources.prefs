@@ -44,6 +44,7 @@ encoding//openerp/addons/base/res/res_users.py=utf-8
 encoding//openerp/addons/base_calendar/base_calendar.py=utf-8
 encoding//openerp/addons/base_quality_interrogation.py=utf-8
 encoding//openerp/addons/base_status/base_stage.py=utf-8
+encoding//openerp/addons/board/board.py=utf-8
 encoding//openerp/addons/crm/crm.py=utf-8
 encoding//openerp/addons/crm/crm_lead.py=utf-8
 encoding//openerp/addons/crm/wizard/crm_lead_to_opportunity.py=utf-8
