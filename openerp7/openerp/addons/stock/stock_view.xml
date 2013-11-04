@@ -788,7 +788,7 @@
                                 </group>
                                 <group>
                                     <field name="company_id" groups="base.group_multi_company" widget="selection"/>
-                                    <field name="date_done" groups="base.group_no_one"/>
+                                    <field name="date_done"/>
                                 </group>
                             </group>
                         </page>
@@ -1581,6 +1581,7 @@
             id="act_product_stock_move_futur_open"
             name="Future Stock Moves"
             res_model="stock.move"
+            view_id = "stock.view_move_tree"
             src_model="product.product"/>
 
         <record id="ir_act_product_location_open" model="ir.values">
