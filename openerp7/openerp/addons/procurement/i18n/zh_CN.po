@@ -397,7 +397,7 @@ msgstr "计量单位"
 #: selection:procurement.order,procure_method:0
 #: selection:product.template,procure_method:0
 msgid "Make to Stock"
-msgstr "备货型生产"
+msgstr "有备货"
 
 #. module: procurement
 #: model:ir.actions.act_window,help:procurement.procurement_action
@@ -760,8 +760,8 @@ msgid ""
 "for replenishment. \n"
 "Make to Order: When needed, the product is purchased or produced."
 msgstr ""
-"MTS 按库存生产: 当需要时，该来自库存或者等待补给。 \n"
-"MTO 按订单生产：当需要时，产品来自采购或者生产。"
+"有备货: 当有需求时，先检查库存可用数量再决定是否补货。 \n"
+"无备货：当有需求时，即使有库存，也针对此需求数量采购或者生产。"
 
 #. module: procurement
 #: field:mrp.property,composition:0
@@ -924,7 +924,7 @@ msgstr "正在处理"
 #: selection:procurement.order,procure_method:0
 #: selection:product.template,procure_method:0
 msgid "Make to Order"
-msgstr "按订单生产"
+msgstr "无备货"
 
 #. module: procurement
 #: field:product.template,supply_method:0
