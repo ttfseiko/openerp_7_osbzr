@@ -275,7 +275,8 @@ class product_pricelist(osv.osv):
                                 seller_uom = supplier.product_uom and supplier.product_uom.id or False
                                 if seller_uom and product_default_uom and product_default_uom != seller_uom:
                                     uom_price_already_computed = True
-                                    qty_in_product_uom = product_uom_obj._compute_qty(cr, uid, product_default_uom, qty, to_uom_id=seller_uom)
+                                    # [FIX] Colin Ligertwood, Zaber Indurstries <colin@zaber.com>
+                                    qty_in_product_uom = product_uom_obj._compute_qty(cr, uid, seller_uom, qty, to_uom_id=product_default_uom)
                                 cr.execute('SELECT * ' \
                                         'FROM pricelist_partnerinfo ' \
                                         'WHERE suppinfo_id IN %s' \
