@@ -766,7 +766,7 @@
                             <field name="partner_id" on_change="onchange_partner_in(partner_id)"/>
                             <field name="backorder_id" readonly="1" attrs="{'invisible': [('backorder_id','=',False)]}"/>
                             <field name="invoice_state" string="Invoice Control"/>
-                            <field name="stock_journal_id" widget="selection" groups="account.group_account_user"/>
+                            <field name="stock_journal_id" widget="selection"/>
                         </group>
                         <group>
                             <field name="date"/>
