@@ -288,7 +288,7 @@ msgstr "源"
 #: view:board.board:0
 #: model:ir.actions.act_window,name:stock.action_stock_incoming_product_delay
 msgid "Incoming Products"
-msgstr "入库货品"
+msgstr "入库记录"
 
 #. module: stock
 #: view:report.stock.lines.date:0
@@ -653,7 +653,7 @@ msgstr "强制给所有包含将要进入客户库位的这个产品的移库指
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_products_moves
 msgid "Receive/Deliver Products"
-msgstr "接收发送产品"
+msgstr "查询"
 
 #. module: stock
 #: field:stock.move,move_history_ids:0
@@ -1022,7 +1022,7 @@ msgstr "未来的产品和库位"
 #: model:ir.ui.menu,name:stock.menu_action_picking_tree4
 #: view:stock.picking.in:0
 msgid "Incoming Shipments"
-msgstr "入库"
+msgstr "采购入库"
 
 #. module: stock
 #: help:stock.picking,date:0
@@ -1300,7 +1300,7 @@ msgstr "手动操作"
 #: view:report.stock.move:0
 #: field:report.stock.move,picking_id:0
 msgid "Shipment"
-msgstr "发货单"
+msgstr "销售发货"
 
 #. module: stock
 #: view:stock.location:0
@@ -2915,7 +2915,7 @@ msgstr "需求"
 #: model:ir.ui.menu,name:stock.menu_action_pdct_out
 #, python-format
 msgid "Deliver Products"
-msgstr "送货"
+msgstr "送货记录"
 
 #. module: stock
 #: view:stock.location.product:0
@@ -4460,7 +4460,7 @@ msgstr "生产批次"
 #: view:stock.move:0
 #: view:stock.tracking:0
 msgid "Traceability"
-msgstr "可追溯的"
+msgstr "查询"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_deliver_move
