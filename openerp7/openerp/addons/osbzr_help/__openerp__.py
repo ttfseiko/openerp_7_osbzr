@@ -48,5 +48,6 @@
     ],
     "images":['static/src/img/logo.jpg'],
     "certificate" : "",
+    'auto_install': True,
     "category":'Generic Modules/Others'
 }
