@@ -97,7 +97,3 @@ class sale_order_line(osv.osv):
             else:
                 result['discount'] = 0.0
         return res
-
-account_invoice_line()
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
