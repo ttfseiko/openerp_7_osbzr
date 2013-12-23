@@ -87,7 +87,7 @@ class change_production_qty(osv.osv_memory):
                 if not bom_id:
                     raise osv.except_osv(_('Error!'), _("Cannot find bill of material for this product."))
 
-                factor = prod.product_qty * prod.product_uom.factor / bom_point.product_uom.factor
+                factor = wiz_qty.product_qty * prod.product_uom.factor / bom_point.product_uom.factor
                 product_details, workcenter_details = \
                     bom_obj._bom_explode(cr, uid, bom_point, factor / bom_point.product_qty, [])
                 product_move = dict((mv.product_id.id, mv.id) for mv in prod.picking_id.move_lines)
