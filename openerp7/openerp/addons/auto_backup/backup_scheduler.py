@@ -26,6 +26,10 @@ import socket
 import os
 import time
 import base64
+
+import pytz
+import datetime
+
 from openerp import tools
 from openerp import netsvc
 
@@ -77,23 +81,33 @@ class db_backup(osv.osv):
                     (_check_db_exist, 'Error ! No such database exist.', [])
                     ]
 
-    def schedule_backup(self, cr, user, context={}):
+    def schedule_backup(self, cr, user, context=None):
+        context = context or {}
         conf_ids= self.search(cr, user, [])
         confs = self.browse(cr,user,conf_ids)
         master_pass = tools.config.get('admin_passwd', False)
+        res_user_obj = self.pool.get('res.users')
         if not master_pass:
             raise
         for rec in confs:
             db_list = self.get_db_list(cr, user, [], rec.host, rec.port)
+            # Get UTC time
+            curtime = datetime.datetime.strptime(datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'), '%Y-%m-%d %H:%M:%S')
+            res_user_res = res_user_obj.browse(cr, user, user, context=context)
+            # user's partner timezone
+            tz = pytz.timezone(res_user_res.tz) if res_user_res.tz else pytz.utc
+            # Set to usre's localtime
+            curtime = pytz.utc.localize(curtime).astimezone(tz)
+            #curtime = curtime.astimezone(pytz.utc)
+
             if rec.name in db_list:
                 try:
                     if not os.path.isdir(rec.bkp_dir):
                         os.makedirs(rec.bkp_dir)
                 except:
                     raise
-                bkp_file='%s_%s.sql' % (rec.name, time.strftime('%Y%m%d_%H_%M_%S'))
+                bkp_file='%s_%s.sql' % (rec.name, curtime.strftime('%Y%m%d_%H_%M_%S'))
                 file_path = os.path.join(rec.bkp_dir,bkp_file)
-                fp = open(file_path,'wb')
                 uri = 'http://' + rec.host + ':' + rec.port
                 conn = xmlrpclib.ServerProxy(uri + '/xmlrpc/db')
                 bkp=''
@@ -103,6 +117,7 @@ class db_backup(osv.osv):
                     logger.notifyChannel('backup', netsvc.LOG_INFO, "Could'nt backup database %s. Bad database administrator password for server running at http://%s:%s" %(rec.name, rec.host, rec.port))
                     continue
                 bkp = base64.decodestring(bkp)
+                fp = open(file_path,'wb')
                 fp.write(bkp)
                 fp.close()
             else:
